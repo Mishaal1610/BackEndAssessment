@@ -1,0 +1,276 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centered Heading */
+.centered-heading {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+}
+
+/* Table Styles */
+.centered-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%; /* Adjust as necessary */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.centered-table th, .centered-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.centered-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.centered-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.centered-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0; /* Reduced padding to make the footer smaller */
+  text-align: center;
+  font-size: 14px; /* Adjust font size for smaller footer */
+}
+
+footer .container {
+  max-width: 1000px; /* Adjust max width if needed */
+  margin: 0 auto;
+}
+
+footer .row {
+  margin: 0;
+}
+
+footer .col-sm-12,
+footer .col-xs-6,
+footer .col-md-3,
+footer .col-md-4 {
+  margin-bottom: 10px; /* Adjust bottom margin for spacing */
+}
+
+footer h6 {
+  font-size: 16px; /* Adjust font size for headings */
+}
+
+footer p {
+  margin: 0; /* Remove default margin */
+}
+
+footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-links li {
+  margin-bottom: 5px; /* Adjust spacing between list items */
+}
+
+footer .social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .social-icons li {
+  display: inline;
+  margin-right: 10px; /* Adjust spacing between social icons */
+}
+
+footer .social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px; /* Adjust size of social icons */
+}
+
+footer .social-icons a:hover {
+  color: #ddd; /* Change color on hover for visibility */
+}
+
+/* Form Styles */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+h3 {
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #555;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+  .navbar ul {
+    padding: 0;
+  }
+
+  .navbar li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  form {
+    margin: 10px;
+  }
+
+  h3 {
+    font-size: 1.5em; /* Adjust the size of headings */
+  }
+
+  .centered-heading {
+    font-size: 1.5em; /* Adjust the size of headings */
+  }
+}
+
+/* Small Devices (Phones) */
+@media (max-width: 480px) {
+  .navbar ul {
+    padding: 0;
+  }
+
+  .navbar li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .navbar a {
+    padding: 10px;
+    display: block;
+  }
+
+  form {
+    margin: 5px;
+  }
+
+  h3, .centered-heading {
+    font-size: 1.2em; /* Further reduce the size of headings */
+  }
+
+  input[type="submit"] {
+    padding: 12px; /* Adjust padding for smaller screens */
+  }
+
+  label {
+    font-size: 14px; /* Adjust font size for labels */
+  }
+}
+
+/* Centered Message Styles */
+.centered-message {
+  text-align: center;
+  color: #333; /* Default text color */
+  margin: 20px 0; /* Add some spacing */
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+/* Image Styles */
+.image-container {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.small-image {
+  max-width: 1200px; /* Adjust the size as needed */
+  height: auto;
+}
+
